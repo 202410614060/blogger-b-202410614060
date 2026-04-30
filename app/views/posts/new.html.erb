@@ -1,0 +1,19 @@
+<h1>Yeni Yazı Ekle</h1>
+
+<%= form_with model: @post do |f| %>
+
+  <div>
+    <%= f.label :title, "Başlık" %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :article, "Yazı" %><br>
+    <%= f.text_area :article %>
+  </div>
+
+  <div>
+    <%= f.submit "Kaydet" %>
+  </div>
+
+<% end %>
